@@ -52,17 +52,18 @@
             cursor: pointer; background: #fff;
         }
 
-        /* Small Blooming Heart Animation */
+        /* Fixed Animation: Higher Z-Index and Solid Red Color */
         .bloom {
             position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0);
-            width: 35px; height: 35px;
-            border: 2px solid var(--soft-pink);
-            z-index: 5; pointer-events: none;
+            width: 40px; height: 40px;
+            background: red; /* Solid Red */
+            z-index: 1000; /* On top of everything */
+            pointer-events: none;
             clip-path: path('M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z');
-            animation: grow 3.5s ease-out forwards;
+            animation: grow 3s ease-out forwards;
         }
 
-        @keyframes grow { 0% { transform: translate(-50%, -50%) scale(0); opacity: 1; } 100% { transform: translate(-50%, -50%) scale(12); opacity: 0; } }
+        @keyframes grow { 0% { transform: translate(-50%, -50%) scale(0); opacity: 1; } 100% { transform: translate(-50%, -50%) scale(15); opacity: 0; } }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
 </head>
@@ -106,14 +107,11 @@
 
     <div class="slide" id="s5" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8102.jpg');">
         <div class="content-wrapper" style="margin-top: -35px;">
-            <h1 style="font-family: 'Playfair Display', serif; font-weight: 900; color: #000; font-size: 4rem;">I</h1>
-            
+            <h1 style="font-family: 'Playfair Display', serif; font-weight: 900; color: #000; font-size: 4.2rem; font-style: normal; text-transform: uppercase;">I</h1>
             <h2 class="cursive" style="font-weight: bold; font-size: 3.2rem; margin: 5px 0;">
                 <span style="color: red;">L</span><span style="color: var(--olive);">ove you</span>
             </h2>
-            
             <h1 style="font-family: 'Dancing Script', cursive; font-weight: bold; font-size: 3.8rem; color: #4a4a4a; margin-top: 5px;">Ashmita</h1>
-            
             <p style="color: #4a4a4a; font-weight: bold; font-size: 0.8rem; margin-top: 20px;">2026 and forever.</p>
         </div>
     </div>
@@ -126,12 +124,13 @@
         }
 
         function startHearts() {
+            // Faster heart generation to ensure they are seen
             setInterval(() => {
                 const h = document.createElement('div');
                 h.className = 'bloom';
                 document.body.appendChild(h);
-                setTimeout(() => h.remove(), 3500);
-            }, 600);
+                setTimeout(() => h.remove(), 3000);
+            }, 500);
         }
     </script>
 </body>
