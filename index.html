@@ -20,12 +20,23 @@
         .active { display: flex; animation: fadeIn 0.6s ease-in; }
 
         .content-wrapper {
-            width: 85%; max-width: 320px;
+            width: 90%; max-width: 320px;
             display: flex; flex-direction: column;
             align-items: center; justify-content: center; z-index: 10;
         }
 
-        .cursive { font-family: 'Great Vibes', cursive; line-height: 1.4; text-align: left; }
+        /* Large Font for the Letter Slide */
+        .letter-text {
+            font-family: 'Great Vibes', cursive;
+            color: #4a0000;
+            font-size: 1.55rem; /* Increased size to fill page */
+            font-weight: bold;
+            line-height: 1.4;
+            text-align: left;
+            width: 100%;
+        }
+
+        .cursive { font-family: 'Great Vibes', cursive; line-height: 1.2; text-align: center; }
         .heading { font-family: 'Dancing Script', cursive; margin-bottom: 10px; text-align: center; }
 
         .btn-next {
@@ -39,7 +50,7 @@
         }
 
         .cat-container {
-            width: 115px; height: 115px;
+            width: 120px; height: 120px;
             border-radius: 50%; border: 3px solid white;
             overflow: hidden; margin: 20px 0;
             cursor: pointer; background: #fff;
@@ -84,13 +95,13 @@
     </div>
 
     <div class="slide" id="s4" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8101.jpg');">
-        <div class="content-wrapper" style="max-width: 280px; margin-top: 40px;">
-            <p class="cursive" style="color: #4a0000; font-size: 1.4rem; font-weight: bold;">
+        <div class="content-wrapper" style="margin-top: 40px;">
+            <div class="letter-text">
                 Dear Ashu,<br><br>
                 Somewhere along the way, you became more than just someone I enjoy spending time with.<br><br>
                 You’re the person who stays, even when I’m quiet, in a bad mood, or not at my best. <br><br>
                 I care about you deeply, and I’d like to choose you — not just on good days, but on the difficult ones too.
-            </p>
+            </div>
         </div>
         <button class="btn-next" onclick="next(5)">Yours ➔</button>
     </div>
