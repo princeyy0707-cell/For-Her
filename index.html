@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Ashu | 2026 ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        :root { --soft-pink: #ffb3c1; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { width: 100%; height: 100%; overflow: hidden; background: #000; font-family: sans-serif; }
+
+        .slide {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            display: none; background-size: cover; background-position: center;
+            justify-content: center; align-items: center; text-align: center;
+        }
+        .active { display: flex; animation: fadeIn 0.8s ease-in; }
+
+        .panda-top { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 85px; z-index: 100; }
+        .fox-spirit { width: 60px; margin: 15px auto; display: block; filter: drop-shadow(0 0 5px white); }
+
+        .content { width: 85%; max-width: 400px; z-index: 10; position: relative; }
+        .cursive { font-family: 'Great Vibes', cursive; line-height: 1.3; }
+        .heading { font-family: 'Dancing Script', cursive; margin-bottom: 10px; }
+
+        .invisible-trigger {
+            background: transparent; border: none; cursor: pointer;
+            width: 280px; height: 140px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100;
+        }
+        .cat-btn {
+            width: 130px; height: 130px; margin: 0 auto; cursor: pointer;
+            border-radius: 50%; border: 3px solid white; overflow: hidden; background: #000;
+        }
+        .next-btn {
+            position: absolute; bottom: 40px; right: 30px;
+            background: transparent; border: none; color: #720917;
+            font-family: 'Great Vibes', cursive; font-size: 2rem; cursor: pointer;
+        }
+
+        .bloom {
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0);
+            width: 100px; height: 100px; border: 2px solid var(--soft-pink);
+            z-index: 5; pointer-events: none;
+            clip-path: path('M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z');
+            animation: grow 4s ease-out forwards;
+        }
+
+        @keyframes grow { 0% { transform: translate(-50%, -50%) scale(0); opacity: 1; } 100% { transform: translate(-50%, -50%) scale(25); opacity: 0; } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <img class="panda-top" src="https://img.icons8.com/external-flat-icons-maxicons/85/external-panda-valentines-day-flat-flat-icons-maxicons.png">
+
+    <div class="slide active" id="s1" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8103.jpg');">
+        <button class="invisible-trigger" onclick="next(2)"></button>
+        <div class="content" style="margin-top: 250px;">
+            <img class="fox-spirit" src="https://api.dicebear.com/7.x/bottts-neutral/svg?seed=fox">
+        </div>
+    </div>
+
+    <div class="slide" id="s2" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8100.jpg');">
+        <div class="content">
+            <h1 class="heading" style="color: #4a4a4a; font-size: 3rem;">Happy New Year</h1>
+            <p style="color: #4a4a4a; font-size: 1.1rem; font-weight: bold;">
+                As this year ends, I just want you to know how grateful I am for you. You made my days brighter in ways you probably don’t even realize. I hope the coming year brings you smiles, peace, and everything your heart quietly wishes for. Happy New Year 🤍
+            </p>
+            <img class="fox-spirit" src="https://api.dicebear.com/7.x/bottts-neutral/svg?seed=fox">
+            <button class="next-btn" onclick="next(3)">Next &rarr;</button>
+        </div>
+    </div>
+
+    <div class="slide" id="s3" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8107.jpg');">
+        <img src="https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8105.jpg" style="position:absolute; width:80px; top:15%; left:10%; border-radius:10px;">
+        <img src="https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8104.jpg" style="position:absolute; width:100px; bottom:15%; right:10%; border-radius:10px;">
+        <div class="content">
+            <h1 class="cursive" style="font-size: 4rem; color: #fff;">For Ashu ✨</h1>
+            <div class="cat-btn" onclick="next(4)">
+                <img src="https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8108.jpg" style="width:100%;">
+            </div>
+            <p style="color: #fff; margin-top: 15px; font-size: 0.9rem;">click on the cat for next</p>
+            <img class="fox-spirit" src="https://api.dicebear.com/7.x/bottts-neutral/svg?seed=fox">
+        </div>
+    </div>
+
+    <div class="slide" id="s4" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8101.jpg');">
+        <div class="content" style="max-width: 380px;">
+            <p class="cursive" style="color: #4a0000; font-size: 1.3rem; text-align: left; font-weight: bold; padding: 10px;">
+                Somewhere along the way, you became more than just someone I enjoy spending time with. You’re the person who stays, even when I’m quiet, in a bad mood, or not at my best. I care about you deeply, and I’d like to choose you — not just on good days, but on the difficult ones too.
+            </p>
+            <img class="fox-spirit" src="https://api.dicebear.com/7.x/bottts-neutral/svg?seed=fox">
+            <button class="next-btn" onclick="next(5)">Yours forever...</button>
+        </div>
+    </div>
+
+    <div class="slide" id="s5" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8102.jpg');">
+        <div class="content">
+            <h1 class="cursive" style="color: #4a4a4a; font-size: 4.2rem;">
+                I LOVE YOU <span style="color: #ffb3c1;">❤️</span><br>ASHMITA <span style="color: #ffb3c1;">❤️</span>
+            </h1>
+            <p style="color: #4a4a4a; font-weight: bold; margin-top: 15px;">2026 and forever.</p>
+            <img class="fox-spirit" src="https://api.dicebear.com/7.x/bottts-neutral/svg?seed=fox">
+        </div>
+    </div>
+
+    <script>
+        function next(n) {
+            document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
+            document.getElementById('s' + n).classList.add('active');
+            if (n === 5) setInterval(() => {
+                const h = document.createElement('div');
+                h.className = 'bloom';
+                document.body.appendChild(h);
+                setTimeout(() => h.remove(), 4000);
+            }, 600);
+        }
+    </script>
+</body>
+              </html>
+                                                                               
