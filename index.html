@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>For Ashu ✨</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
     <style>
-        :root { --soft-pink: #ffb3c1; --deep-red: #720917; }
+        :root { --soft-pink: #ffb3c1; --deep-red: #720917; --olive: #556b2f; }
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         
         body, html { width: 100%; height: 100%; overflow: hidden; background: #000; font-family: sans-serif; }
@@ -25,15 +25,11 @@
             align-items: center; justify-content: center; z-index: 10;
         }
 
-        /* Large Font for the Letter Slide */
         .letter-text {
             font-family: 'Great Vibes', cursive;
-            color: #4a0000;
-            font-size: 1.55rem; /* Increased size to fill page */
-            font-weight: bold;
-            line-height: 1.4;
-            text-align: left;
-            width: 100%;
+            color: #4a0000; font-size: 1.55rem;
+            font-weight: bold; line-height: 1.4;
+            text-align: left; width: 100%;
         }
 
         .cursive { font-family: 'Great Vibes', cursive; line-height: 1.2; text-align: center; }
@@ -56,15 +52,17 @@
             cursor: pointer; background: #fff;
         }
 
+        /* Small Heart Animation for Finale */
         .bloom {
             position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0);
-            width: 60px; height: 60px; border: 2px solid var(--soft-pink);
+            width: 40px; height: 40px; /* Reduced size */
+            border: 2px solid var(--soft-pink);
             z-index: 5; pointer-events: none;
             clip-path: path('M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z');
             animation: grow 3.5s ease-out forwards;
         }
 
-        @keyframes grow { 0% { transform: translate(-50%, -50%) scale(0); opacity: 1; } 100% { transform: translate(-50%, -50%) scale(15); opacity: 0; } }
+        @keyframes grow { 0% { transform: translate(-50%, -50%) scale(0); opacity: 1; } 100% { transform: translate(-50%, -50%) scale(10); opacity: 0; } }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
 </head>
@@ -107,11 +105,13 @@
     </div>
 
     <div class="slide" id="s5" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8102.jpg');">
-        <div class="content-wrapper">
-            <h1 class="cursive" style="color: #4a4a4a; font-size: 3.5rem;">
-                I LOVE YOU <br><span style="color: #ff4d6d;">ASHMITA ❤️</span>
-            </h1>
-            <p style="color: #4a4a4a; font-weight: bold; font-size: 1rem; margin-top: 15px;">2026 and forever.</p>
+        <div class="content-wrapper" style="margin-top: -30px;">
+            <h1 style="font-family: 'Playfair Display', serif; font-weight: 900; color: #000; font-size: 4rem; margin-bottom: 5px;">I</h1>
+            <h2 class="cursive" style="font-weight: bold; font-size: 3rem; margin-bottom: 10px;">
+                <span style="color: red;">L</span><span style="color: var(--olive);">ove You</span>
+            </h2>
+            <h1 style="font-family: 'Dancing Script', cursive; font-weight: bold; font-size: 3.8rem; color: #4a4a4a; margin-top: 5px;">Ashmita</h1>
+            <p style="color: #4a4a4a; font-weight: bold; font-size: 0.8rem; margin-top: 15px;">2026 and forever.</p>
         </div>
     </div>
 
