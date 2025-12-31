@@ -15,49 +15,54 @@
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             display: none; background-size: contain; background-repeat: no-repeat;
             background-position: center; flex-direction: column;
-            justify-content: center; align-items: center; padding: 20px;
+            justify-content: center; align-items: center; padding: 15px;
         }
         .active { display: flex; animation: fadeIn 0.6s ease-in; }
 
         .content-wrapper {
-            width: 90%; max-width: 320px;
+            width: 92%; max-width: 340px;
             display: flex; flex-direction: column;
-            align-items: center; justify-content: center; z-index: 10;
+            z-index: 10;
         }
 
+        /* Letter Styling to fill the page */
         .letter-text {
             font-family: 'Great Vibes', cursive;
-            color: #4a0000; font-size: 1.55rem;
-            font-weight: bold; line-height: 1.4;
-            text-align: left; width: 100%;
+            color: #4a0000;
+            font-size: 1.05rem; /* Balanced to fit the long message */
+            font-weight: bold;
+            line-height: 1.25;
+            text-align: left;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px; /* Moves it down to stay within the paper border */
         }
 
         .cursive { font-family: 'Great Vibes', cursive; line-height: 1.2; text-align: center; }
-        .heading { font-family: 'Dancing Script', cursive; margin-bottom: 10px; text-align: center; }
+        .heading { font-family: 'Dancing Script', cursive; margin-bottom: 5px; text-align: center; }
 
         .btn-next {
-            position: absolute; bottom: 8%; right: 10%;
+            position: absolute; bottom: 5%; right: 8%;
             background: white; color: var(--deep-red);
             border: none; border-radius: 50px;
-            padding: 10px 22px; font-size: 1.3rem;
+            padding: 8px 18px; font-size: 1.2rem;
             font-family: 'Great Vibes', cursive;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             cursor: pointer; z-index: 200;
         }
 
         .cat-container {
-            width: 120px; height: 120px;
+            width: 110px; height: 110px;
             border-radius: 50%; border: 3px solid white;
-            overflow: hidden; margin: 20px 0;
+            overflow: hidden; margin: 15px 0;
             cursor: pointer; background: #fff;
         }
 
-        /* Fixed Animation: Higher Z-Index and Solid Red Color */
         .bloom {
             position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0);
             width: 40px; height: 40px;
-            background: red; /* Solid Red */
-            z-index: 1000; /* On top of everything */
+            background: red;
+            z-index: 1000;
             pointer-events: none;
             clip-path: path('M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z');
             animation: grow 3s ease-out forwards;
@@ -74,7 +79,7 @@
     </div>
 
     <div class="slide" id="s2" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8100.jpg');">
-        <div class="content-wrapper">
+        <div class="content-wrapper" style="align-items: center;">
             <h1 class="heading" style="color: #4a4a4a; font-size: 2.2rem;">Happy New Year</h1>
             <p style="color: #4a4a4a; font-size: 1rem; font-weight: 600; text-align: center;">
                 As this year ends, I just want you to know how grateful I am for you. You made my days brighter in ways you probably don’t even realize. I hope the coming year brings you smiles, peace, and everything your heart quietly wishes for. Happy New Year 🤍
@@ -84,8 +89,8 @@
     </div>
 
     <div class="slide" id="s3" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8107.jpg');">
-        <div class="content-wrapper">
-            <h1 class="cursive" style="font-size: 3.8rem; color: #fff; text-align: center;">For Ashu ✨</h1>
+        <div class="content-wrapper" style="align-items: center;">
+            <h1 class="cursive" style="font-size: 3.5rem; color: #fff; text-align: center;">For Ashu ✨</h1>
             <div class="cat-container" onclick="next(4)">
                 <img src="https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8108.jpg" style="width:100%; height:100%; object-fit:cover;">
             </div>
@@ -94,24 +99,24 @@
     </div>
 
     <div class="slide" id="s4" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8101.jpg');">
-        <div class="content-wrapper" style="margin-top: 40px;">
+        <div class="content-wrapper">
             <div class="letter-text">
-                Dear Ashu,<br><br>
-                Somewhere along the way, you became more than just someone I enjoy spending time with.<br><br>
-                You’re the person who stays, even when I’m quiet, in a bad mood, or not at my best. <br><br>
-                I care about you deeply, and I’d like to choose you — not just on good days, but on the difficult ones too.
+                Dear Ashu,<br>
+                At first it felt like a dream—it was small, tiny flowing feelings of mine like a narrow stream. However, as time passed, your presence mattered to me more than I thought it would; your texts slowly became a daily necessity. Your goodnight and goodmorning began to start and end my day. <br><br>
+                As time passed, we grew closer, and I finally came to terms with those feelings. The way you care for me, the small things that make me smile... every time I look at the stars, the peaceful moonlight, the flowing water of the river, or the blue sky, everything reminds me of you. <br><br>
+                I don't even have words to thank you for always being with me, letting me be with you, and sharing your heart even when it brought tears. You were always there whenever I wasn't good, helping me cheer up and get rid of my bad habits. I'm truly thankful to the gods and the internet that I met you. I hope you'll let me hold you whenever you're feeling down. Be it hard times, sad ones, or happy ones—I wish to be with you all the time.
             </div>
         </div>
         <button class="btn-next" onclick="next(5)">Yours ➔</button>
     </div>
 
     <div class="slide" id="s5" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8102.jpg');">
-        <div class="content-wrapper" style="margin-top: -35px;">
-            <h1 style="font-family: 'Playfair Display', serif; font-weight: 900; color: #000; font-size: 4.2rem; font-style: normal; text-transform: uppercase;">I</h1>
+        <div class="content-wrapper" style="align-items: center; margin-top: -30px;">
+            <h1 style="font-family: 'Playfair Display', serif; font-weight: 900; color: #000; font-size: 4.2rem;">I</h1>
             <h2 class="cursive" style="font-weight: bold; font-size: 3.2rem; margin: 5px 0;">
                 <span style="color: red;">L</span><span style="color: var(--olive);">ove you</span>
             </h2>
-            <h1 style="font-family: 'Dancing Script', cursive; font-weight: bold; font-size: 3.8rem; color: #4a4a4a; margin-top: 5px;">Ashmita</h1>
+            <h1 style="font-family: 'Dancing Script', cursive; font-weight: bold; font-size: 3.8rem; color: #4a4a4a;">Ashmita</h1>
             <p style="color: #4a4a4a; font-weight: bold; font-size: 0.8rem; margin-top: 20px;">2026 and forever.</p>
         </div>
     </div>
@@ -124,7 +129,6 @@
         }
 
         function startHearts() {
-            // Faster heart generation to ensure they are seen
             setInterval(() => {
                 const h = document.createElement('div');
                 h.className = 'bloom';
