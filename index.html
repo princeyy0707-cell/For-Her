@@ -122,46 +122,4 @@
     </script>
 </body>
 </html>
-            <div class="cat-container" onclick="next(4)">
-                <img src="https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8108.jpg" style="width:100%;">
-            </div>
-            <p style="color: #fff; font-size: 0.9rem;">tap the bunny</p>
-        </div>
-    </div>
 
-    <div class="slide" id="s4" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8101.jpg');">
-        <div class="content-wrapper" style="margin-top: -10px;">
-            <p class="cursive" style="color: #4a0000; font-size: 1.2rem; font-weight: bold; text-align: left; padding: 20px;">
-                Somewhere along the way, you became more than just someone I enjoy spending time with. You’re the person who stays, even when I’m quiet, in a bad mood, or not at my best. I care about you deeply, and I’d like to choose you — not just on good days, but on the difficult ones too.
-            </p>
-        </div>
-        <button class="btn-next" onclick="next(5)">Yours ➔</button>
-    </div>
-
-    <div class="slide" id="s5" style="background-image: url('https://raw.githubusercontent.com/princeyy0707-cell/For-Her/main/8102.jpg');">
-        <div class="content-wrapper">
-            <h1 class="cursive" style="color: #4a4a4a; font-size: 3.5rem;">
-                I LOVE YOU <br><span style="color: #ff4d6d;">ASHMITA ❤️</span>
-            </h1>
-            <p style="color: #4a4a4a; font-weight: bold; font-size: 1rem; margin-top: 15px;">2026 and forever.</p>
-        </div>
-    </div>
-
-    <script>
-        function next(n) {
-            document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
-            document.getElementById('s' + n).classList.add('active');
-            if (n === 5) startHearts();
-        }
-
-        function startHearts() {
-            setInterval(() => {
-                const h = document.createElement('div');
-                h.className = 'bloom';
-                document.body.appendChild(h);
-                setTimeout(() => h.remove(), 3500);
-            }, 600);
-        }
-    </script>
-</body>
-</html>
